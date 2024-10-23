@@ -1,0 +1,267 @@
+/* Réinitialisation générale */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(./assets/images/header/headerbg.jpg);
+  height: 550px;
+  width: 100%;
+  background-position: center right;
+  background-size: cover;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  width: 130px; /* Ajustement de la taille du logo */
+}
+
+/* Groupe du logo et texte */
+.groupe1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.groupe1 h2 {
+  color: #ececec;
+  font-size: 1.7rem;
+}
+
+.groupe1 h2 span {
+  color: #adff2f; /* Vert fluo */
+  font-weight: bold;
+}
+
+/* Texte de l'offre réduite */
+.pargrf1 {
+  color: white;
+  margin-left: 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 50px;
+  width: 60vw;
+}
+
+.pargrf1 span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d3b4e1; /* Couleur pour le texte principal */
+}
+.pargrf1 .spanHoraire {
+  width: 100%;
+}
+.pargrf1 .divPrix {
+  order: 1;
+}
+.pargrf1 .span1 {
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+.numbre h1 {
+  display: inline-block;
+  font-size: 100px;
+  color: white;
+  position: relative;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.numbre h1 span {
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+.numbre h1 small {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Bouton */
+button.btn-success {
+  background-color: #32cd32;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  
+}
+button.btn-success{
+margin-left: 4%;
+
+}
+
+
+/* Réseau social */
+.raseau {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+button.client h6 {
+  font-weight: bold;
+  padding: 3px;
+}
+
+/* Icones sociales */
+.btn-group {
+  background: linear-gradient(to right, #00ff00, #006400);
+}
+
+.btn-group button i {
+  color: white;
+}
+
+/* Image de la maison */
+.headerhouse {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 550px;
+  height: auto;
+}
+/* spanTaux */
+.spanTaux{
+display: block;
+ flex-wrap: wrap;
+ padding: 10px;
+ color: white;
+ font-size: xx-small;
+ margin-left: 4%;
+
+
+}
+.spanTaux p:nth-child(2){
+    line-height: 0.5px;
+
+}
+/* home */
+nav{
+    width: 70%;
+    text-align: center;
+    /* margin-left: 10%; */
+    margin: 0 auto;
+    /* background-color: rgb(19, 4, 19); */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34193c;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home .homeText{
+  text-align: center;
+  margin: 10px;
+}
+
+.home p{
+  font-family:Arial, Helvetica, sans-serif;
+  width: 50%;
+  /* transform: translate(60px,60px); */
+  text-align: center;
+  margin: 0 auto;
+  font-size:smaller;
+
+}
+.home p span{
+font-weight: bold;
+}
+.desousNav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin:50px 60px  ;
+}
+.desousNav .plus{
+  border-radius: 50% ;
+  background-color:#34193c ;
+  color: rgb(132, 229, 22);
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* margin:50px 60px  ; */
+  width: 50px;
+  margin: auto;
+  aspect-ratio: 1/1;
+}
+.plus1{
+  width: 150px;
+  font-size: 15px;
+  text-align:center;
+
+
+}
+.plusDes{
+  width: 150px;
+  font-size: 15px;
+  text-align:center;
+}
+/* buton en nos presantation */
+/* .butonStyled {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  
+
+} */
+
+.styled {
+  margin: 0;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border:0;
+ background-color: #32cd32;;
+padding: 5px;
+font-size: medium;}
+
+   
+  
+
