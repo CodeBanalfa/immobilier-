@@ -312,8 +312,6 @@ article {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .recharche .TitrRecharche {
-  /* padding: 10px; */
-  /* margin: 30px; */
   /* margin-top: 0.2; */
   text-align: center;
   font-size: 20px;
@@ -362,4 +360,306 @@ article {
   transform: translateX(-1rem);
   display: inline-block; /*avec inline block on peut depalce l"element exempl on peut depance de  € dans le input*/
   white-space: nowrap;
+}
+.TitrDernier {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #4d394f;
+}
+.dernierBloc {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.dernierBloc a {
+  color: #c397d0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 0 60px;
+  text-align: center;
+  /* margin: 70px; */
+}
+.grid-item {
+  width: 100%;
+  
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  
+}
+.grid-item .content
+{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(./assets/images/header/headerbg.jpg);
+  
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  font-size: medium;
+  color: white;
+  transition: 0.6s;
+}
+.grid-item:hover .content{
+  opacity: 0.8;
+  
+}
+.grid-item:hover .content h3{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+}
+.grid-item:hover .content p{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+/* Concater */
+.contact-group {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  /* margin-bottom: 30px; */
+  background-color: #e9e7ea;
+}
+
+.title-contact-group h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #38263d;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.group-form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.civilite,
+.name,
+.firstname,
+.email,
+.tel,
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.message p {
+  color: #55425b;
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}
+
+textarea {
+  resize: none;
+  width: 95%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #a76dbd;
+}
+
+.btn-envoyer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-envoyer-form button {
+  width: 120px;
+  height: 40px;
+  background-color: #a6cf37;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-envoyer-form button:hover {
+  background-color: #87a92e;
+}
+.navFooter {
+  top: 2px;
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* Header et section d'introduction */
+  header {
+    height: fit-content; /* Réduire la hauteur */
+    text-align: center; /* Centrer le texte */
+    padding: 10px;
+  }
+  .headerhouse {
+    width: 100px;
+    top: 30%;
+  
+  }
+  .raseau{
+    display: grid;
+    direction: ltr;
+    top: 50%;
+    
+ 
+  }
+  .groupe1 {
+    flex-direction: column; /* Placer le logo et le texte en colonne */
+    /* gap: 5px; */
+    align-items: center;
+    width: 60%;
+    top: 50%;
+    /* margin: -40%; */
+  }
+  .pargrf1 {
+    width: 100%; /* Réduire la largeur pour centrer le texte */
+    margin: auto;
+    text-align: center;
+  }
+   
+  /* Bouton principal */
+  button.btn-success {
+    width: 60%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: auto;
+    display: block;
+  }
+
+  /* Navigation */
+  nav{
+    width: 100%;
+    margin: auto;
+    /* flex-direction: column; */
+  }
+  nav ul {
+   
+    text-align: center;
+    justify-content: space-around;
+  }
+  nav li {
+    margin-bottom: 5px;
+  }
+
+  /* Section "Qui sommes-nous" */
+  .home{
+    width: 100%;
+  }
+  .home p{
+    width: 100%;
+
+
+  }
+  .desousNav {
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+      grid-gap: 20px; 
+      width: 80%; 
+      max-width: 1200px;
+    align-items: center;
+    text-align: center;
+
+  }
+  .plus {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+  }
+  .plus1, .plusDes {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Section des services */
+  .services {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+  }
+  .articlall {
+    width: 100%;
+    display: grid;
+   grid-gap: 20px;
+  
+  }
+ 
+  /* Formulaire de recherche */
+  .recharche {
+    padding: 10px;
+    justify-content: center;
+  }
+  .recharchBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #budget, #budget2 {
+    width: 90%;
+  }
+
+  /* Grille de biens */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .grid-item {
+    width: 100%;
+  }
+
+  /* Section contact */
+  .contact-group {
+    padding: 10px;
+  }
+  .group-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .civilite, .name, .firstname, .email, .tel, .date, .message {
+    width: 90%;
+  }
+  .btn-envoyer-form button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
 }
