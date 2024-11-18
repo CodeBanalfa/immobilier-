@@ -384,7 +384,7 @@ article {
 }
 .grid-item {
   width: 100%;
-  
+
   aspect-ratio: 1/1;
   border: 1px solid transparent;
   padding: 1px;
@@ -397,17 +397,15 @@ article {
   height: 100%;
   display: block;
   margin: auto;
-  
 }
-.grid-item .content
-{
+.grid-item .content {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
   background-image: url(./assets/images/header/headerbg.jpg);
-  
+
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -418,21 +416,19 @@ article {
   color: white;
   transition: 0.6s;
 }
-.grid-item:hover .content{
+.grid-item:hover .content {
   opacity: 0.8;
-  
 }
-.grid-item:hover .content h3{
+.grid-item:hover .content h3 {
   font-size: 40px;
   color: white;
   margin-bottom: 15px;
 }
-.grid-item:hover .content p{
+.grid-item:hover .content p {
   font-size: 30px;
   color: white;
   margin-bottom: 15px;
 }
-
 
 /* Concater */
 .contact-group {
@@ -525,14 +521,11 @@ footer {
   .headerhouse {
     width: 100px;
     top: 30%;
-  
   }
-  .raseau{
+  .raseau {
     display: grid;
     direction: ltr;
     top: 50%;
-    
- 
   }
   .groupe1 {
     flex-direction: column; /* Placer le logo et le texte en colonne */
@@ -547,7 +540,7 @@ footer {
     margin: auto;
     text-align: center;
   }
-   
+
   /* Bouton principal */
   button.btn-success {
     width: 60%;
@@ -558,13 +551,12 @@ footer {
   }
 
   /* Navigation */
-  nav{
+  nav {
     width: 100%;
     margin: auto;
     /* flex-direction: column; */
   }
   nav ul {
-   
     text-align: center;
     justify-content: space-around;
   }
@@ -573,30 +565,28 @@ footer {
   }
 
   /* Section "Qui sommes-nous" */
-  .home{
+  .home {
     width: 100%;
   }
-  .home p{
+  .home p {
     width: 100%;
-
-
   }
   .desousNav {
     display: grid;
-     grid-template-columns: 1fr 1fr;
-      grid-gap: 20px; 
-      width: 80%; 
-      max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 80%;
+    max-width: 1200px;
     align-items: center;
     text-align: center;
-
   }
   .plus {
     width: 80px;
     height: 80px;
     margin: 10px auto;
   }
-  .plus1, .plusDes {
+  .plus1,
+  .plusDes {
     font-size: 0.9rem;
     width: 100%;
     text-align: center;
@@ -607,16 +597,19 @@ footer {
     width: 100%;
     margin: auto;
     text-align: center;
-
+    transform: translate(0%, 0%);
   }
   .articlall {
     width: 100%;
     display: grid;
-   grid-gap: 20px;
-  
+    grid-gap: 20px;
+    justify-content: center;
   }
- 
+
   /* Formulaire de recherche */
+  .search-button {
+    transform: translate(0);
+  }
   .recharche {
     padding: 10px;
     justify-content: center;
@@ -626,7 +619,8 @@ footer {
     align-items: center;
     gap: 15px;
   }
-  #budget, #budget2 {
+  #budget,
+  #budget2 {
     width: 90%;
   }
 
@@ -648,7 +642,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .civilite, .name, .firstname, .email, .tel, .date, .message {
+  .civilite,
+  .name,
+  .firstname,
+  .email,
+  .tel,
+  .date,
+  .message {
     width: 90%;
   }
   .btn-envoyer-form button {
